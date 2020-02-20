@@ -1,6 +1,7 @@
 function createNewUser() {
-let name = prompt("Enter the fisrtname: ");
-let surname = prompt("Enter the lastname: ");
+let name = prompt("Please, enter your name : ");
+let surname = prompt("Please, enter your surname : ");
+
 let newUser = {
     firstName: name,
     lastName: surname,
@@ -8,6 +9,8 @@ let newUser = {
         alert((this.firstName.charAt(0) + this.lastName).toLowerCase()) ;
     }
 };
-    newUser.getLogin();
+    return newUser;
 }
-    createNewUser();
+
+let user = new createNewUser();
+user.getLogin();
