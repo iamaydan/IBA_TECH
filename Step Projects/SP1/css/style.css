@@ -1,0 +1,480 @@
+/*//////////////global elements////////////*/
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+:root {
+    --primCol: #18cfab;
+}
+
+.button {
+    width: 150px;
+    height: 55px;
+    box-shadow: 0 -5px 0 white;
+    border-style: none;
+    border-radius: 5px;
+    background-color: var(--primCol);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
+    transition: all .3s;
+}
+
+.button:hover {
+    background-color: #1694ad;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.constant {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+/*//////////////global elements////////////*/
+
+
+
+
+
+
+
+
+.main-page {
+    background-image: url(../img/background/1.jpg);
+    opacity: 0.9;
+    background-attachment: fixed;
+    width: 100vw;
+    max-width: 100%;
+    height: 1000px;
+  }
+
+.header {
+    width: 100%;
+    background-color: rgba(19, 16, 16, 0.5);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    font-size: 16px;
+}
+ 
+.logo-text:before {
+    background: url(../img/logo/1.png) no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 25px;
+    font-weight: 800;
+    font-size: 35px;
+    content: 'H';
+}
+
+.logo-text {
+    color: white;
+    font-size: 32px;
+    padding: 30px 0;
+}
+
+#ham {
+    font-weight: 700;
+    color: var(--primCol);
+}
+
+.header-link {
+    margin-right: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    color: #ffffff90;
+}
+
+.header-link:hover:not(:last-child) {
+    color: var(--primCol);
+    border-bottom: 2px solid var(--primCol);
+    padding-bottom: 42px;
+    transition: all .3s ease-out;
+}
+
+.fa-search:hover {
+    color: var(--primCol);
+    transform: scale(1.2);
+}
+
+.main-page-elements {
+    margin-top: 230px;
+}
+
+.the-ham-is {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.wordpress {
+    color: var(--primCol);
+    font-weight: 700;
+}
+
+.we-are {
+    font-size: 76px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+    color: white;
+}
+
+.just-buy {
+    font-size: 29px;
+    font-weight: 300;
+    color: #c8c8c8;
+    font-style: unset;
+}
+
+.main-page-btns{
+    display: flex;
+    padding:150px 350px 0;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+/*////////////////features panel//////////////*/
+.features-section {
+    display: flex;
+}
+
+.features-panel {
+    width: 25%;
+    display: flex;
+    padding: 77px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primCol);
+    border-top: 5px solid white;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.features-panel:nth-child(2n-1){
+    border-top: 5px solid var(--primCol);
+    color: var(--primCol);
+    background-color: #1c2a33;
+    padding-top: 60px;
+}
+
+.features-text{
+    padding-top: 55px;
+}
+
+
+
+/*///////////////our-services panel/////////////*/
+  
+  .our-services {
+    margin-top: 50px;  
+}
+  
+  .services-title-text {
+    color: #4e4e4e;
+    font-size: 35px;
+  }
+  
+  .green-lines {
+    display: inline-block;
+    margin-top: 35px;
+  }
+  
+  .upper-line {
+    transform: translateX(-10px);    
+    background-color: var(--primCol);
+    width: 76px;
+    height: 1px;
+  }
+  
+  .lower-line {
+    margin-top: 5px;
+    transform: translateX(10px);
+    background-color: var(--primCol);
+    width: 77px;
+    height: 1px;
+  }
+  
+  .our-services-tabs {
+    margin-top: 60px;
+  }
+  
+  .services-tabs {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .our-services-tab {
+    background-color: #f8fcfe;
+    border: 1px solid rgb(236, 236, 236);
+    padding: 27px 0;
+    cursor: pointer;
+    font-size: 15px;
+    color: #777777;
+
+  }
+  
+  .our-services-tab.active {
+    position: relative;
+    background-color: var(--primCol);
+    color: #ffffff;
+  }
+
+  .our-services-tab:hover {
+    background-color: var(--primCol);
+    color: #ffffff;
+  }
+  
+  .our-services-tab.active:after {
+    display: flex;
+    content: "";
+    position: absolute;
+    border: 12px solid transparent;
+    left: 85px;
+    bottom: -21px;
+    border-top: 12px solid var(--primCol);
+  } 
+
+  .tabs-contents {
+    padding-top: 30px;
+    height: 200px;
+  }
+  
+  .tab-content {
+    display: none;
+    
+  }
+  
+  .tab-content.active {
+      display: block;
+    }
+    
+  .tab-content-img {
+    width: 195px;
+    height: 140px;
+    margin-right: 20px;
+    float: left;
+  }
+  
+  .tab-content-text {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    padding-right: 10px;
+    text-align: justify;
+  }
+  
+  
+
+/*////////////////Purchase now section///////////*/
+.everything-is-ready {
+    height: 480px;
+    background: url(../img/background/2.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 80px;
+}
+
+.everything-is-ready-container {
+    width: 100%;
+    height: 480px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text1 {
+    text-transform: uppercase;
+    color: var(--primCol);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.text2 {
+    margin-top: 35px;
+    color: #d8d8d8;
+    font-size: 16px;
+}
+
+.purchase-btn {
+    margin-top: 80px;
+}
+
+
+
+
+
+/*////////////////Our Amazing Work Section/////////////*/
+.our-amazing-work{
+    text-align: center;
+    background-color: #f8fcfe;
+    border-bottom:1px solid #e1e1e1;
+}
+
+.section-header{
+    padding-top: 80px;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    color: #4e4e4e;
+}
+
+.our-amazing-work-tabs{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 25px auto;
+    width: 800px;
+    font-size: 14px;
+    color: #717171;
+}
+.work-tab{
+    padding: 20px 0;
+    background-color: white;
+    border: 1px solid #ebebeb;
+}
+
+.work-tab:hover{
+    color: var(--primCol);
+    border-top: 2px var(--primCol) solid;
+    cursor: pointer;
+}
+
+.work-images{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding-bottom: 70px;
+}
+
+.image-hover{
+    position: absolute;
+    width: 290px;
+    height: 210.33px;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top: 5px solid var(--primCol);
+}
+
+.img-icons{
+    position: relative;
+    display: inline-block;
+    margin-top: 43px;
+    width: 47px;
+    height: 47px;
+    border: 1px solid var(--primCol);
+    border-radius: 47px;
+    cursor: pointer;
+}
+
+.img-search{
+    position: absolute;
+    color: var(--primCol);
+    top: 16px;
+    left: 16px;
+}
+
+.fa-link{
+    position: absolute;
+    top:16px;
+    left: 15px;
+    color: var(--primCol);
+}
+
+.img-hover-text{
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primCol);
+}
+
+.img-hover-name{
+    color: #8a8b8a;
+}
+
+.our-amazing-work-images{
+    width: 290px;
+}
+
+.img-card{
+    display: flex;
+    position: relative;
+}
+
+.img-card:hover .image-hover{
+    display: block;
+}
+
+.img-icons:hover{
+    background-color: var(--primCol);
+    transition: all .5s ease;
+
+}
+
+.img-icons:hover .fa-search,.img-icons:hover .fa-link {
+    color: white;
+}
+
+.load-more-btn{
+    margin-bottom: 100px;
+}
+
+.fa-plus{
+    padding-right: 15px;
+}
+
+.hidden{
+    display: none;
+}
+
+.work-tab.active{
+    color: var(--primCol);
+    border-top: 2px var(--primCol) solid;
+}
+
+
+
+/*////////////////////Footeeeeeerrr///////////////*/
+.footer {
+    background-color: #22353f;
+    color: #aeaeae;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.footer-ham {
+    color: var(--primCol);
+}
