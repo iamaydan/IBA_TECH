@@ -1,6 +1,16 @@
 import React from "react";
 import { GiShoppingCart } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const FavLink = styled(Link)`
+  background-color: #cc3333;
+  padding: 18px 20px;
+  margin-left: 20px;
+  border-radius: 2px;
+  box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+`;
 
 export const Layout2 = ({ children }) => {
   return (
@@ -32,6 +42,7 @@ export const Layout2 = ({ children }) => {
               </div>
               <div className="shopping-cart-text">Cart(0) </div>
             </Link>
+            <FavLink to="/favorites">★</FavLink>
           </div>
         </div>
       </header>

@@ -4,7 +4,7 @@ import "./App.css";
 
 import { ProductsContextProvider } from "./context/products";
 
-import { Homepage, Cart } from "./pages";
+import { Homepage, Cart, Favorites } from "./pages";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
         <Switch>
           <Route path="/products" component={Homepage} />
           <Route path="/cart" component={Cart} />
+          <Route path="/favorites" component={Favorites} />
         </Switch>
       </ProductsContextProvider>
     </Router>
