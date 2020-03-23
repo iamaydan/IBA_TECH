@@ -1,20 +1,30 @@
-import React, { useContext } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { ProductsContextProvider } from "./context/products";
+import { ProductsContextProvider } from './context/products';
+import { ThemeContextProvider } from './context/theme';
+import { CartContextProvider } from './context/cart';
 
-import { Homepage, Cart, Favorites } from "./pages";
+import {
+  Homepage,
+  Cart
+} from './pages';
 
 function App() {
+
   return (
     <Router>
       <ProductsContextProvider>
-        <Switch>
-          <Route path="/products" component={Homepage} />
-          <Route path="/cart" component={Cart} />
-          <Route path="/favorites" component={Favorites} />
-        </Switch>
+        <ThemeContextProvider>
+          <CartContextProvider>
+
+            <Switch>
+              <Route path="/products" component={Homepage} />
+              <Route path="/cart" component={Cart} />
+            </Switch>
+
+          </CartContextProvider>
+        </ThemeContextProvider>
       </ProductsContextProvider>
     </Router>
   );
