@@ -2,6 +2,7 @@ import React from "react";
 import { GiShoppingCart } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import SingleProduct from "../pages/Homepage/components/SingleProduct";
 
 const FavLink = styled(Link)`
   background-color: #cc3333;

@@ -11,7 +11,7 @@ export const SingleProductListItem = ({ image, name, price, id }) => {
         <h3> {price}</h3>
         <i className="fas fa-star"></i>
       </Actions>
-      <Button to={`products/${id}`}>Info</Button>
+      <Button to={`products/${id}`}>Add to Cart</Button>
     </Card>
   );
 };

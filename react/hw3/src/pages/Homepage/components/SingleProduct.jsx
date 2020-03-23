@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 import { productsContext } from "../../../context/products";
+import { useState } from "react";
 
 export const SingleProduct = ({
   history: { push },
@@ -12,17 +13,26 @@ export const SingleProduct = ({
 }) => {
   const productsList = useContext(productsContext);
   const product = productsList.find(item => item.id == id);
-
+  const [item, setItem] = useState(0);
   return (
     <Container>
       {product && (
         <Popup>
+          Do you want to add this item to your cart?
           <Close onClick={() => push("/products")}>X</Close>
           <Image src={product.image} alt={product.name} />
           <h1>{product.name}</h1>
           <h2>{product.price}</h2>
           <Actions>
-            <Button onClick={() => push("/products")}>Add to Cart</Button>
+            <Button
+              onClick={() => {
+                push("/products");
+                setItem(item => item + 50);
+                console.log(item);
+              }}
+            >
+              Add
+            </Button>
             <Button onClick={() => push("/products")}>Cancel</Button>
           </Actions>
         </Popup>
@@ -79,15 +89,17 @@ const Close = styled.button`
 
 const Actions = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 `;
 
 const Button = styled(Link)`
   background-color: #000;
-  padding: 5px 15px;
+  width: 100px;
+  padding: 15px 0;
+  margin: 13px;
   border-radius: 4px;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   cursor: pointer;
 
