@@ -22,8 +22,8 @@ export const SingleProduct = ({
           <h1>{product.name}</h1>
           <h2>{product.price}</h2>
           <Actions>
-            <Button>Add to Favorites</Button>
-            <Button>Add to Cart</Button>
+            <Button onClick={() => push("/products")}>Add to Cart</Button>
+            <Button onClick={() => push("/products")}>Cancel</Button>
           </Actions>
         </Popup>
       )}
@@ -49,7 +49,7 @@ const Popup = styled.div`
   width: 96%;
   padding: 30px;
   text-align: center;
-  max-width: 400px;
+  max-width: 500px;
   color: black;
   border-radius: 10px;
   background: #fff;
@@ -79,7 +79,7 @@ const Close = styled.button`
 
 const Actions = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `;
 
 const Button = styled(Link)`

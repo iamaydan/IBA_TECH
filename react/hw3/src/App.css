@@ -1,5 +1,5 @@
 .App {
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-image: url("./img/bgi.png");
 }
 
@@ -278,7 +278,7 @@ footer {
 
 .prod-img {
   height: 230px;
- width: 230px;
+  width: 230px;
   border-radius: 4px;
   margin-bottom: 10px;
 }
