@@ -1,41 +1,63 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
-export const SingleProductListItem = ({ image, name, price, id, view }) => {
-    return (
-        <Card to={`/products/${id}`} className={`product-card-list-item--${view}`}>
-            <img alt={name} src={image} />
-            <h4>{name}</h4>
-            <h3>{price}$</h3>
-        </Card>
-    )
-}
+export const SingleProductListItem = ({ image, name, price, id }) => {
+  return (
+    <Card>
+      <img alt={name} src={image} />
+      <h4>{name}</h4>
+      <Actions>
+        <h3> {price}</h3>
+        <button onClick={() => {}}>
+          <i className="fas fa-star"></i>
+        </button>
+      </Actions>
+      <Button to={`products/${id}`}>Add to Cart</Button>
+    </Card>
+  );
+};
 
-const Card = styled(Link)`
-    width: calc((100% - 60px) / 3);
-    margin: 0 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-    padding: 15px;
-    color: black;
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+const Card = styled.div`
+  width: 250px;
+  padding: 30px;
+  border-radius: 10px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 
-    img {
-        width: 100%;
-        height: 150px;
-        border-radius: 10px;
-        object-fit: contain;
+  img {
+    width: 250px;
+    height: 250px;
+    border-radius: 4px;
+  }
+`;
+
+const Button = styled(Link)`
+  background-color: #cc3333;
+  padding: 5px 15px;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+`;
+
+const Actions = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  i {
+    color: lightgrey;
+    cursor: pointer;
+
+    &:hover {
+      color: #cc3333;
     }
-
-    &.product-card-list-item--list {
-        width: calc(100% - 20px);
-        img {
-            width: 100px;
-            height: 100px;
-        }
-    }
-`
+  }
+`;

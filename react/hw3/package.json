@@ -1,15 +1,21 @@
 {
-  "name": "context-shop",
+  "name": "react3",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-h5-audio-player": "^2.4.2",
+    "react-icons": "^3.9.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
+    "react-shopping-cart": "^1.8.32",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.0.1"
   },
   "scripts": {
@@ -32,8 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "node-sass": "^4.13.1"
   }
 }

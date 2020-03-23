@@ -1,31 +1,25 @@
-import React, { useContext } from 'react';
-import styled from 'styled-components';
+import React, { useContext } from "react";
+import styled from "styled-components";
 
-import { productsContext } from '../../../context/products';
-import { ThemeContext } from '../../../context/theme';
+import { productsContext } from "../../../context/products";
 
-import { SingleProductListItem } from './SingleProductListItem';
+import { SingleProductListItem } from "./SingleProductListItem";
 
 export const ProductsList = () => {
-    const products = useContext(productsContext);
-    const { view } = useContext(ThemeContext);
+  const products = useContext(productsContext);
 
-    return (
-        <List>
-            {products.map(item => (
-                <SingleProductListItem
-                    view={view}
-                    key={item.id}
-                    {...item}
-                />
-            ))}
-
-        </List>
-    )
-}
+  return (
+    <List>
+      {products.map(item => (
+        <SingleProductListItem key={item.id} {...item} />
+      ))}
+    </List>
+  );
+};
 
 const List = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px -10px;
-`
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+`;

@@ -1,32 +1,24 @@
-// Create Context for products
-// Prepare Provider
-// Inside Provider fetch products form local server & store them
-// Provide products with context
-// Connect App with this context
-// Take & show products from context in App component
-
-import React, { useState, useEffect, createContext } from 'react';
+import React, { useState, useEffect, createContext } from "react";
 
 export const productsContext = createContext();
 
 export const ProductsContextProvider = ({ children }) => {
+  const [products, setProducts] = useState([]);
 
-    const [products, setProducts] = useState([]);
+  const getProducts = async () => {
+    const res = await fetch("http://localhost:3001/products");
+    const data = await res.json();
 
-    const getProducts = async () => {
-        const res = await fetch('http://localhost:3001/products');
-        const data = await res.json();
+    setProducts(data);
+  };
 
-        setProducts(data);
-    }
+  useEffect(() => {
+    getProducts();
+  }, []);
 
-    useEffect(() => {
-        getProducts();
-    }, [])
-
-    return (
-        <productsContext.Provider value={products}>
-            {children}
-        </productsContext.Provider>
-    )
-}
+  return (
+    <productsContext.Provider value={products}>
+      {children}
+    </productsContext.Provider>
+  );
+};
