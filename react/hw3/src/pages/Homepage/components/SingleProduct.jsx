@@ -20,20 +20,20 @@ export const SingleProduct = ({
       {product && (
         <Popup>
           Do you want to add this item to your cart?
-          <Close onClick={() => push("/products")}>X</Close>
+          <Close onClick={() => push("/")}>X</Close>
           <Image src={product.image} alt={product.name} />
           <h1>{product.name}</h1>
           <h2>{product.price}</h2>
           <Actions>
             <Button
               onClick={() => {
-                push("/products");
+                push("/");
                 addToCart(product);
               }}
             >
               Add
             </Button>
-            <Button onClick={() => push("/products")}>Cancel</Button>
+            <Button onClick={() => push("/")}>Cancel</Button>
           </Actions>
         </Popup>
       )}

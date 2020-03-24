@@ -13,6 +13,7 @@ function App() {
       <ProductsContextProvider>
         <CartContextProvider>
           <Switch>
+            <Route exact path="/" component={Homepage} />
             <Route path="/products" component={Homepage} />
             <Route path="/cart" component={Cart} />
             <Route path="/favorites" component={Favorite} />

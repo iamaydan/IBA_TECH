@@ -53,11 +53,11 @@ export const FirstSection = () => {
 
       <header className="second-line-container">
         <div className="second-line">
-          <a className="page-logo" href="#">
+          <Link className="page-logo" to="/">
             <img src={require("../img/Logo.png")} />
-          </a>
+          </Link>
           <nav className="navbar">
-            <Link className="navbar-item" to="/products">
+            <Link className="navbar-item" to="/">
               HOME
             </Link>
             <a className="navbar-item" href="#">

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -8,10 +8,8 @@ export const SingleProductListItem = ({ image, name, price, id }) => {
       <img alt={name} src={image} />
       <h4>{name}</h4>
       <Actions>
-        <h3> {price}</h3>
-        <button onClick={() => {}}>
-          <i className="fas fa-star"></i>
-        </button>
+        <h3> {price} </h3>
+        <i onClick={() => {}} className="fas fa-star +"></i>
       </Actions>
       <Button to={`products/${id}`}>Add to Cart</Button>
     </Card>

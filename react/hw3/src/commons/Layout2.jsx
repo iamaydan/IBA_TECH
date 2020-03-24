@@ -61,11 +61,11 @@ export const Layout2 = ({ children }) => {
 
       <header className="second-line-container">
         <div className="second-line">
-          <Link className="page-logo" to="/products">
+          <Link className="page-logo" to="/">
             <img src={require("../img/Logo.png")} />
           </Link>
           <nav className="navbar">
-            <Link className="navbar-item" to="/products">
+            <Link className="navbar-item" to="/">
               HOME
             </Link>
             <a className="navbar-item" href="#">
