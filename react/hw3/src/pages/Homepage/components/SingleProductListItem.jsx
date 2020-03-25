@@ -1,15 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { useState } from "react";
 
 export const SingleProductListItem = ({ image, name, price, id }) => {
+  const [status, setStatus] = useState(0);
   return (
     <Card>
       <img alt={name} src={image} />
       <h4>{name}</h4>
       <Actions>
         <h3> {price} </h3>
-        <i onClick={() => {}} className="fas fa-star +"></i>
+        <i
+          onClick={() => {
+            setStatus(!status);
+          }}
+          style={{
+            color: status ? "#cc3333" : "lightgrey"
+          }}
+          className="fas fa-star"
+        ></i>
       </Actions>
       <Button to={`products/${id}`}>Add to Cart</Button>
     </Card>
