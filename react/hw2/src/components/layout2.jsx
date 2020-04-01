@@ -2,25 +2,20 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 function Layout2() {
-  const [data, setData] = useState({ Products: [] });
-  console.log(data);
-  const getData = async url => {
-    const response = await fetch(url);
-    const newData = await response.json();
-    setData(data => ({
-      ...newData,
-      Products: [...data.Products, ...newData.Products]
-    }));
-    console.log(data);
+  const [data, setData] = useState();
+  const getData = async () => {
+    const res = await fetch("/info.json");
+    const newData = await res.json();
+    setData(newData);
   };
 
   useEffect(() => {
-    getData("../info.json");
+    getData();
   }, []);
 
   return (
     <div className="products-container">
-      {data.Products.map(({ name, price, img, url, number }) => (
+      {data.map(({ name, price, img, url, number }) => (
         <div className="product-item">
           <a href={url}>
             <img className="prod-img" src={img} alt={name} />
