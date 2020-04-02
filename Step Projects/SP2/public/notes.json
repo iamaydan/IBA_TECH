@@ -1,0 +1,36 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Note1",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mi imperdiet lorem feugiat molestie ac id libero. Fusce eu fringilla mauris, et pellentesque augue. Nunc at est eu tortor convallis efficitur. Quisque et faucibus libero, lobortis placerat sem. Curabitur placerat mi quis magna convallis placerat. Vivamus at tortor velit.",
+      "date": 1585750929156,
+      "arch": true,
+      "color": "red"
+    },
+    {
+      "id": 2,
+      "title": "Note2",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mi imperdiet lorem feugiat molestie ac id libero. Fusce eu fringilla mauris, et pellentesque augue. Nunc at est eu tortor convallis efficitur. Quisque et faucibus libero, lobortis placerat sem. Curabitur placerat mi quis magna convallis placerat. Vivamus at tortor velit.",
+      "date": 1585750954690,
+      "arch": false,
+      "color": "yellow"
+    },
+    {
+      "id": 3,
+      "title": "Note3",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mi imperdiet lorem feugiat molestie ac id libero. Fusce eu fringilla mauris, et pellentesque augue. Nunc at est eu tortor convallis efficitur. Quisque et faucibus libero, lobortis placerat sem. Curabitur placerat mi quis magna convallis placerat. Vivamus at tortor velit.",
+      "date": 1585750954690,
+      "arch": false,
+      "color": "grey"
+    },
+    {
+      "id": 4,
+      "title": "Note4",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed mi imperdiet lorem feugiat molestie ac id libero. Fusce eu fringilla mauris, et pellentesque augue. Nunc at est eu tortor convallis efficitur. Quisque et faucibus libero, lobortis placerat sem. Curabitur placerat mi quis magna convallis placerat. Vivamus at tortor velit.",
+      "date": 1585750954690,
+      "arch": true,
+      "color": "blue"
+    }
+  ]
+}
