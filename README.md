@@ -1,7 +1,5 @@
 # IBATech Academy
 
-My works during Mobile Developement course by IBAR
-
 ![alt text](https://edumap.az/wp-content/uploads/2019/09/news.png "Logo Title Text 1")
 
 ## Clone
