@@ -8,21 +8,19 @@
 
 ![alt text](http://www.kaspiy.az/photos/news999.png)
 
-Portfolio of IBA Tech Academy assignments completed by me for Academic purposes.
+This repo is for solutions of IBA Tech Academy assignments.
 
 
 ## Table of Contents
 
 ### #️⃣ Final Project
 
-1. Final Project [e-Donor](https://github.com/iamaydan/IBA_TECH/tree/master/Final%20Project)
-
+1. Final Project [e-Donor](https://github.com/iamaydan/IBA_TECH/tree/master/Final%20Project): Social app including post, chat, save and more functionalities for blood emergencies, connecting blood donors directly with people in blood need.
 	
 ### #️⃣ Step Projects
 
-1. Step Project [NotesApp](https://github.com/iamaydan/IBA_TECH/tree/master/Step%20Projects/SP-React) with React.js
-2. Step Project [HAM](https://github.com/iamaydan/IBA_TECH/tree/master/Step%20Projects/SP-html_css_js) with HTML5 + CSS3 + JavaScript
-
+1. Step Project [NotesApp](https://github.com/iamaydan/IBA_TECH/tree/master/Step%20Projects/SP-React): Creating, editing, deleteing, and archiving notes
+2. Step Project [HAM](https://github.com/iamaydan/IBA_TECH/tree/master/Step%20Projects/SP-html_css_js): HAM landing page
 
 ### #️⃣ Homeworks
 
