@@ -25,23 +25,27 @@ This repo is for solutions of IBA Tech Academy assignments.
 ### #️⃣ Homeworks
 
 1. Javascript [link](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/JavaScript)
-*[hw1](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/JavaScript/hw1) : Checking user's age before continuing to browse
-*[hw2](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/JavaScript/hw2) : Doing int operations entered by user as string values 
-*[hw3](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/JavaScript/hw3) : Creating username consists of first letter of name and whole surname
-*[hw4](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/JavaScript/hw4) : Filtering array by given type
-*[hw5](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/JavaScript/hw5) : Showing clicked tab elements while hiding non-clickeds
+
+* [hw1](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/JavaScript/hw1) : Checking user's age before continuing to browse
+* [hw2](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/JavaScript/hw2) : Doing int operations entered by user as string values 
+* [hw3](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/JavaScript/hw3) : Creating username consists of first letter of name and whole surname
+* [hw4](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/JavaScript/hw4) : Filtering array by given type
+* [hw5](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/JavaScript/hw5) : Showing clicked tab elements while hiding non-clickeds
 
 2. React Native [link](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/React%20Native)
-*[hw1](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/React%20Native/hw1) : Shopping list app
+
+* [hw1](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/React%20Native/hw1) : Shopping list app
 
 3. React.js [link](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/React)
-*[hw1](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/React/hw1) : Toggle modal windows (delete/rename)
-*[hw2](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/React/hw2) : Musica website for musics (listening, streaming, buying, etc.)
-*[hw3](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/React/hw3) : Musica website advanced
+
+* [hw1](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/React/hw1) : Toggle modal windows (delete/rename)
+* [hw2](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/React/hw2) : Musica website for musics (listening, streaming, buying, etc.)
+* [hw3](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/React/hw3) : Musica website advanced
 
 4. HTML + CSS [link](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/html_css)
-*[hw1](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/html_css/hw1) : Ramda simple website
-*[hw2](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/html_css/hw2) : Journey simple website
+
+* [hw1](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/html_css/hw1) : Ramda simple website
+* [hw2](https://github.com/iamaydan/IBA_TECH/tree/master/homeworks/html_css/hw2) : Journey simple website
 
 
 # Contribution
