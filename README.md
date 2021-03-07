@@ -1,6 +1,6 @@
 # IBATech Academy
 
-![alt text](https://edumap.az/wp-content/uploads/2019/09/news.png "Logo Title Text 1")
+![alt text](https://ibatech.az/wp-content/themes/ibatech/img/header/logo-bank.png "Logo Title Text 1")
 
 ## Clone
 
